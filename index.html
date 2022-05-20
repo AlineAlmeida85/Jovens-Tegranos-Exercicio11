@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>EXERCÍCIO 11</title>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="page-header">EXERCÍCIO 11</h1>
+                <p>Fazer um programa para ler as duas notas que um aluno obteve no
+                    primeiro e segundo semestres de uma disciplina anual. Em seguida,
+                    mostrar a nota final que o aluno obteve (com uma casa decimal) no ano
+                    juntamente com um texto explicativo. Caso a nota final do aluno seja
+                    inferior a 60.00, mostrar a mensagem "REPROVADO", conforme exemplos.</p>
+                <p>Exemplo: <br>
+                    Digite a primeira nota:<span style="color: red;">34.0</span><br>
+                    Digite a segunda nota:<span style="color: red;">23.5</span><br>
+                    NOTA FINAL = 57.5 <br>
+                    REPROVADO</p>
+            </div>
+        </div>
+        <div class="container formulario">
+            <form>
+                <div class="form-group">
+                    <div class="input-group input-group-md">
+                        <span class="input-group-addon">Digite a primeira nota:</span>
+                        <input id="inputNota1" type="number" class="form-control" aria-describedby="sizing-addon1">
+                        <span class="input-group-addon"></span> 
+                    </div>                  
+                </div>
+                <div class="form-group">
+                    <div class="input-group input-group-md">
+                        <span class="input-group-addon">Digite a segunda nota:</span>
+                        <input id="inputNota2" type="number" class="form-control" aria-describedby="sizing-addon1">
+                        <span class="input-group-addon"></span> 
+                    </div>                  
+                </div>                                                    
+                <button type="button" class="btn btn-info" onclick="verificar()">Verificar</button>
+            </form>
+        </div>
+        <br>
+        <div class="container formulario" id="form2">
+            <form>
+                <div class="form-group">
+                    <div class="input-group input-group-md">
+                        <span class="input-group-addon">NOTA FINAL:</span>                
+                        <p class="form-control" id="notaFinal"></p>
+                        <span class="input-group-addon"></span>                    
+                    </div>            
+                </div>
+                <div class="form-group">
+                    <div class="input-group input-group-md">
+                        <span class="input-group-addon">STATUS:</span>                
+                        <p class="form-control" id="resultadoFinal"></p>
+                        <span class="input-group-addon"></span>                    
+                    </div>            
+                </div>                    
+            </form>      
+        </div>
+        <div class="jumbotron">
+            <div class="container">
+                <p>Espero que  tenha gostado! Feito por Aline Almeida ❤️</p>             
+            </div>
+        </div>
+        <script src="./script.js"></script>     
+    </body>
+</html>
